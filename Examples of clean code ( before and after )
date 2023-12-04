@@ -1,0 +1,39 @@
+Here's an example of code before and after applying clean code principles:
+
+Before:
+
+```python
+def calc(a,b):
+    res = 0
+    for i in range(a):
+        if i % 2 == 0:
+            res += i * b
+        else:
+            res -= i * b
+    return res
+```
+
+After:
+
+```python
+def calculate_result(a, b):
+    result = 0
+    for i in range(a):
+        if i % 2 == 0:
+            result += i * b
+        else:
+            result -= i * b
+    return result
+```
+
+In the "before" example, the code is somewhat messy and violates clean code principles. Here's how it has been improved in the "after" example:
+
+1. Function Name: The function name has been changed from `calc` to `calculate_result` to provide a more descriptive and meaningful name. This makes it easier to understand the purpose of the function.
+
+2. Variable Names: The variable `res` has been renamed to `result` to improve clarity and make the code more self-explanatory. Using descriptive variable names helps in understanding the code's intention and improves readability.
+
+3. Indentation and Formatting: The code has been properly indented and formatted to enhance readability. Proper indentation ensures that the code structure is clear and helps in understanding the control flow.
+
+4. Consistent Spacing: Spaces have been added around operators and after commas to improve code readability. Consistent spacing helps in visually separating different elements of the code and makes it easier to follow.
+
+By applying these clean code principles, the code becomes more readable, maintainable, and easier to understand for both the original author and other developers who might work on it in the future.
